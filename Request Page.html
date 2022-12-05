@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<!-- Jasmin Washington Southern Illinois Universtiy Data Developed: 12--1--2022 Date Tested 12--2--2022 -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Akiyama Anime Art</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="../lab 2 bike rentals/styles/slicknav.css">  <!--CSS slicknav stylesheet-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <meta name="description" content="Anime Shop"> 
+        <meta name="keywords" content="anime, paintings, drawings, glass painting, art, art shop, markers, tiktok, youtube"> 
+    </head>
+    
+
+    <header>
+        <figcaption> Order Page</figcaption>
+    <!-- Navigation Menu -->
+    
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu"> 
+        <ul class="menu_color">
+            <li><a href="index.html" class="current">Home</a></li> 
+            <li><a href="Prices.html">Prices</a></li> 
+            <li><a href="Popular Animes I've Painted.html" >Popular Animes I've Painted</a></li>
+            <li><a href="Art Display.html" >Artwork Display</a></li>
+            <li><a href="About Me.html">About Me / More Info</a></li> 
+            <li><a href="Request Page.html" class="lastitem">Order Here</a></li>
+        </ul> 
+    </nav>  
+    </header> 
+    <div class="order_color">
+    
+    <body class="order_body">
+        <div class="request_color">
+        <!--Photos for order page-->
+            <h2 class="art_head">Akiyama Anime Art </h2>
+            <figure class="high">
+                <img class="high" src= "../anime paintings/images/Bungou Stray Dogs.jpg" />
+                <img class= "kake" src= "../anime paintings/images/Haikyuu.jpg" />
+
+                </figure>
+    <!--When the custoer fills out this for the informatiowill be set to the results page-->
+        <form name="myform" action="../anime paintings/Results.html" method="get">
+
+     <!--Email Field --> 
+            <div class="title">
+                <div class="cust_info">
+            <p><strong>CUSTOMER INFORMATION</strong></p>
+                </div>
+            </div>
+        <div class="first_half">
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" autofocus required placeholder="Email"><br>
+     
+    <!--Full Name-->
+            <label for="Full Name">Full Name:</label>
+            <input type="text" name="Full Name" id="Full Name" minlength="16" maxlength="26" autofocus required placeholder="Full Name"><br>
+     
+    <!--Address Field-->
+            <label for="Address">Address:</label>
+            <input type="text" name="Address" id="Address" autofocus required placeholder="Address"><br>
+
+     <!--City Field -->
+            <label for="City">City:</label>
+            <input type="text" name="City" id="City" minlength="5" maxlength="25" autofocus required placeholder="City"><br>
+
+    <!--State Drop Down Menu -->            
+            <label for="State">State:</label>
+                <select id="States" autofocus required placeholder="States"> id="States"><br>
+                        <option value=""></option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="Califonia">Califonia</option>
+                        <option value="Colorodo">Colorodo</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                    <select><br>
+    
+    <!--Zipcode Menu-->
+            <label for="Zip Code">Zip code:</label>
+            <input type="text" name="Zip code" id="Zip code"
+            pattern= "^\d{5}(-\d{4})?$" required placeholder="Five Digits"><br>
+        </div>
+
+    <!--Phone Number Field-->
+        <div class="numb_list1">
+            <label for="Phone">Phone Number:</label>
+            <input type="tel" id="phone" id="phone"
+            pattern= "\d{3}[\-]\d{3}[\-]\d{4}" required placeholder="xxx-xxx-xxxx"><br>
+        </div>
+    <!--Date Field with Calendar-->
+        <div class="numb_list2">
+            <label for="Creation Date">Order Date:</label>
+            <input type="date" id="date" required><br>
+        
+        <div class="all_box">
+        
+
+    <!--Secial comments Box--> 
+        <div class="comments">
+            <div class="title">
+            <p><strong>SPECICAL REQUEST</strong></p><br>
+            </div>
+            <div class="special">
+            <textarea id="Special Request"
+            placeholder="If you have an questions, comments, or special request please enter them here or feel free to just leave a nice message">
+            </textarea>
+            </div>
+        </div>
+        <!--Asking user what type of product they want-->
+        <div class="Sheet">
+            <div class="title">
+            <p><strong>ACRYLIC SHEETS</strong></p>
+            </div>
+            <label for="General">4x6</label>
+            <input type="checkbox" name="" id="Acrylic 1" value="4x6"><br>
+            <label for="5x7">5x7</label>
+            <input type="checkbox" name="Acrylic 2" id="Acrylic 2" value="5x7"><br>
+            <label for="8x10">10x12</label>
+            <input type="checkbox" name="Acrylic 2" id="Acrylic 3" value="8x10"><br>
+            <label for="10x12">10x12</label>
+            <input type="checkbox" name="Inquiry 3" id="Inquiry 3" value="10x12"><br>
+            <label for="12x24">12x24</label>
+            <input type="checkbox" name="Acrylic 4" id="Acrylic 4" value="12x24"><br>
+            <label for="GLitter Finish">Glitter Finish ($10 Extra)</label>
+            <input type="checkbox" name="Extra Charge" id="Extra Charge" value="Glitter Finish"><br>
+        
+        </div>
+
+        <!--Asking user what type of product they want -->
+        <div class="Round"> 
+            <div class="title">   
+            <p><strong>ROUND ACRYLIC</strong></p>
+            </div>
+            <label for="4 inches">4 inches:</label>
+            <input type="checkbox" name="Round 1" id="Round 1" value="4 inch Round"><br>
+            <label for="Glitter finish">Glitter Finish ($10 Extra)</label>
+            <input type="checkbox" name="Extra Charge" id="Extra Charge" value="Glitter Finish"><br>
+        </div>
+        <!--Askig the user what type of product they want-->
+        <div class="Bookmark"> 
+            <div class="title">   
+            <p><strong>BOOKEMARK</strong></p>
+            </div>
+            <label for="2x5.5 inches">2x5.5 inches</label>
+            <input type="checkbox" name="Bookmark 1" id="Bookmark 1" value="1 Bookmark"><br>
+            <label for="Pack of 3">Pack of 3</label>
+            <input type="checkbox" name="Bookmark 3" id="Bookmark 3" value="3 bookmarks"><br>
+            <label for="Glitter finish">Glitter Finish ($10 Extra)</label>
+            <input type="checkbox" name="Extra Charge" id="Extra Charge" value="Glitter Finish"><br>
+        </div>
+
+        <!--Askig the user wat type of product they want-->
+        <div class="Coaster"> 
+            <div class="title">   
+            <p><strong>COASTER</strong></p>
+            </div>
+            <label for="4 inches">4 inches</label>
+            <input type="checkbox" name="Coaster 1" id="Coaster 1" value="1 Coaster"><br>
+        </div>
+            <div class="title">
+            <p><strong>Thank you for making a purchase!</strong></p>
+            </div>
+
+            <!--Submit and reset button-->
+            <input type="submit">
+            <input type="reset" name="reset" id="reset"> 
+        </div>
+
+            
+    
+    </body>
+
+</html>

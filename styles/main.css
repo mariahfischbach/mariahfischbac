@@ -1,0 +1,398 @@
+/*Jasmin Washington Southern Illinois University Date Developed: 12-2-2022 Date Tested: 12-2-2022*/
+
+@media only screen and (max-width: 2024px) {
+    #mobile_menu {display: none; }
+  }
+  
+  /* tablet portrait layout (768px to 959px)*/
+  
+@media only screen and (max-widht: 959px){
+    #mobile_menu {display: none;}
+}
+  
+  /*mobile landscape layout (480px to 767)*/
+  
+@media only screen and (max-width: 767px){
+    #mobile_menu {display: block; }
+    #nav_menu {display: none; }
+    header h2 {font-size: 1.375em; }        /* 22 / 16*/
+    header h3 {font-size: .8125em; }        /*13 / 16*/
+    p {font-size: .875em }                  /*14 / 16*/
+    article h1, main h2, aside h2 
+        {font-size: 1em; }                 /*base font size*/
+    aside li {font-size: .875em; }         /*14 / 16*/
+}
+  /* mobile portrait layout (479px or less) */
+
+@media only screen and (max-width: 479px){
+    #mobile_menu{ display: block; }
+    #nav_menu {display: none; }
+    header h2 {font-size: 1.375em; }       /*22 / 16*/       
+    header h3 {font-size: .8125em; }       /*13 / 16*/
+    p{ font-size: .875em; }
+    article h1, main h2, aside h2
+    {font-size: 1em; }                     /*base font size*/
+    aside li {font-size: .875em; }         /*14 / 16*/
+}
+/*Media Query for services table*/
+@media only screen and (max-width:470px) {
+    th, td{ display: block;}
+    thead {display: none;}
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 110%;
+        background-color:#7b9fcf;
+    }
+    tbody td {border-bottom-style: none;}
+    tfoot{
+        background-color:#cad5e3;
+        border: none;
+        border-top: 1px solid black;
+    }
+    tfoot th, tfoot td:nth-of-type(1) {display: none;}
+}
+
+/*The styles of the elements*/
+/*All of the pages headers*/
+figcaption{
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom:2px solid white;
+}
+.menu_color{
+    background-color: #fd93ba;
+    
+}
+.home_color{
+    background-color: #ffafcc;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 5px solid;
+    border-color: white;
+}
+
+/*navigation menu*/
+#nav_menu ul{
+    list-style-type: none;
+    padding: 1em;
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+#nav_menu ul li{
+    display: inline;
+    padding: 0 1.5em;
+}
+#nav_menu ul li a{
+    font-weight: bold;
+    color: black;
+}
+/*Image rollover for all pages*/
+.high {
+    width: 100%;
+    position: relative;	
+	margin:  0 auto;
+	max-width: 230px;
+    height: 275px; 
+    float: left;                  
+}
+/* Image rollover */
+.high img{
+    
+    width: 100%; 
+    position: absolute;	
+    border: 5px solid;          
+    border-color: black; 
+    border-radius: 0px;
+	opacity: 1;
+	max-width: 820px;
+	height: 350px;
+}
+/*fade effect*/
+.high.kake{
+  transition: opacity 2s linear;
+}
+
+/* burned in effect on image */
+.high:hover> .kake{
+
+  opacity: 0;
+}
+
+/*Home Page CSS*/
+body {
+    margin: 5px auto;                    /* 10 pixel margin to the entire page*/
+    width: 1000px;
+    height: 820px;                       /*set the width of the page to 725 pixels*/
+    background-image:linear-gradient(#cdb4db,#ffc8dd);         /*add a colored background*/    
+}
+.home_text{
+    text-align: justify;
+    font-size: medium;
+    position:relative;
+    left: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 2%;
+
+}
+.contact{
+    position: relative;
+    left: 23%;
+}
+.bullet{
+    position: relative;
+    left: 23%;
+}
+
+/*Prices Page CSS*/
+
+.pricelist{
+    position: absolute;
+    left: 40%;
+    bottom: -15%;
+}
+.price_color{
+    background-color: #ffafcc;
+    height: 625px;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 5px solid;
+    border-color: white;
+}
+
+/*Popular Animes Page CSS*/
+
+.anime_color{
+    background-color: #ffafcc;
+    height: 625px;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 5px solid;
+    border-color: white;
+}
+
+.help_list{
+    position: relative;
+    left: 8%;
+}
+
+.help_list2{
+    position: relative;
+    left: 20%;
+}
+.left_column{
+    position: relative;
+    left: 8%;
+}
+.left_column2{
+    position: relative;
+    left: 32%;
+}
+.right_column{
+    position: relative;
+    left: 70%;
+    bottom: 50%;
+}
+.right_column2{
+    position: relative;
+    left: 70%;
+    bottom: 50%;
+}
+h1, h2, h3 {
+    padding: 10px;                        /*10px padding to all the headers*/
+    text-decoration:wavy; 
+    text-shadow: 1px 1px 1px black;   
+}
+
+p {
+    padding: 0 5px 0;                /* 5 pixel left and right to paragraph tags*/  
+} 
+
+/*Artwork Display Page CSS*/
+.art_body{
+    margin: 5px auto;                    /* 10 pixel margin to the entire page*/
+    width: 1000px;
+    height: 1700px;                       /*set the width of the page to 725 pixels*/
+    background-image:linear-gradient(#cdb4db,#ffc8dd);         /*add a colored background*/    
+}
+.art_text{
+    background-color: #ffafcc;
+    height: 1500px;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 5px solid;
+    border-color: white;
+}
+.img_1{
+    scale: 28%;
+    border: 20px solid white;
+    position: relative;
+    right: 45%;
+    bottom:28%;
+}
+
+.img_2{
+    scale: 25%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 1350px;
+}
+.img_3{
+    scale: 25%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 2800px;
+    left: 8%;
+
+}
+.img_4{
+    scale: 25%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 4050px;
+    right: 45%;
+}
+.img_5{
+    scale: 25%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 4750px;
+    right: 45%;
+}
+.img_6{
+    scale: 25%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 5950px;
+    left: 25%;
+}
+.img_7{
+    scale: 25%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 7500px;
+    left: 50%;
+}
+.img_8{
+    scale: 25%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 8500px;
+    left: 27%;
+}
+.img_9{
+    scale: 30%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 9500px;
+    right: 20%;
+}
+.img_10{
+    scale: 25%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 10500px;
+}
+.img_11{
+    scale: 25%;
+    border: 20px solid white;
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 12400px;
+    left: 10%;
+}
+.img_12{
+    scale: 20%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 12650px;
+    left: 35%;
+}
+.img_13{
+    scale: 25%;
+    border: 20px solid white;
+    position: relative;
+    bottom: 13900px;
+}
+
+/*Css for contact Page*/
+.order_color{
+    background-color: #ffafcc;
+    height: 1260px;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 5px solid;
+    border-color: white;
+    padding-bottom: 8%;
+}
+textarea{height: 5em; width: 25em;}
+
+label, input{
+    font-size: 90%;
+}
+label{
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    padding:1%;
+
+}
+.numb_list1{
+    position: relative;
+    left: -8%;
+}
+
+.numb_list2{
+    position: relative;
+    left: 15%;
+}
+.first_half{
+    position: relative;
+    left: -10%;
+
+}
+.all_box{
+    position: relative;
+    left: 0%;
+}
+.title{
+    position: relative;
+    left: 20%;
+}
+.cust_info{
+    position: relative;
+    left: -6%;
+}
+.special{
+    position: relative;
+    left: 20%;
+
+}
+.order_body{
+    margin: 5px auto;                    /* 5 pixel margin to the entire page*/
+    width: 1000px;
+    height: 1500px;                       /*set the height to 1500 pixels*/
+    background-image:linear-gradient(#cdb4db,#ffc8dd); 
+}
+/*A red box will be placed around all the firelds that are required*/
+input:required, input[required]{
+    border: 1px solid red;
+}
+
+/*results page CSS*/
+.results_color{
+    background-color: #ffafcc;
+    height: 625px;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 5px solid;
+    border-color: white;
+}
