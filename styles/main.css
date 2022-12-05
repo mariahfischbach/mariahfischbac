@@ -320,6 +320,20 @@ p {
     bottom: 13900px;
 }
 
+/*CSS for about me page*/
+.about_me{
+    position: relative;
+    left: 5%;
+}
+
+.more_info{
+    position: relative;
+    left: 5%;
+}
+.socials{
+    position: relative;
+    left: 24%;
+}
 /*Css for contact Page*/
 .order_color{
     background-color: #ffafcc;
